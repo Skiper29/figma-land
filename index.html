@@ -17,77 +17,30 @@
     ></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Product</a></li>
-          <li><a href="index.html">Pricing</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <img src="./img/logo/logo-light.png" alt="Figma Land" />
-        <div>
-          <img src="./img/logo/socails/twitter.svg" alt="Twitter" />
-          <img src="./img/logo/socails/facebook.svg" alt="Facebook" />
-          <img src="./img/logo/socails/linkedin.svg" alt="LinkedIn" />
-        </div>
-      </div>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.navbar.partial.html"
+      ></nav>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.hero.partial.html"
+      ></section>
     </header>
 
-    <main>
-      <section id="hero">
-        <h1>The best products start with Figma</h1>
-        <p>
-          Most calendars are designed for teams. Slate is designed for
-          freelancers.
-        </p>
-        <button>Try For Free</button>
-      </section>
-      <section id="features">
-        <h2>Features</h2>
-        <p>
-          Most calendars are designed for teams. Slate is designed for
-          freelancers.
-        </p>
-        <div>
-          <article>
-            <img src="./img/vectors/Vector-1.svg" alt="vector" />
-            <h3>OpenType features Variable fonts</h3>
-            <p>
-              Slate helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-          </article>
-          <article>
-            <img src="./img/vectors/Vector-2.svg" alt="vector" />
-            <h3>Design with real data</h3>
-            <p>
-              Slate helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-          </article>
-          <article>
-            <img src="./img/vectors/Vector-3.svg" alt="vector" />
-            <h3>Fastest way to take actiona</h3>
-            <p>
-              Slate helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="video-preview">
-        <!-- 
-        <h2>Video Preview</h2>
-        <video src=""></video> 
-        -->
-        <img src="./img/video-screen.jpg" width="1200px" alt="Video screen" />
-      </section>
+    <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.features.partial.html"
+      ></section>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.video-intro.partial.html"
+      ></div>
 
       <section id="organize">
         <h2>Fastest way to organize</h2>
