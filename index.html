@@ -72,100 +72,18 @@
         data-hx-get="index.pricing.partial.html"
       ></section>
 
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>
-          Most calendars are designed for teams. Slate is designed for
-          freelancers.
-        </p>
-        <div>
-          <form action="">
-            <h3>Contact Us</h3>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
-          <div>
-            <address>
-              <p>
-                6386 Spring St undefined Anchorage, Georgia 12473 United States
-              </p>
-              <p>(843) 555-0130</p>
-              <p>willie.jennings@example.com</p>
-            </address>
-
-            <iframe
-              src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-            <div>
-              <a href="index.html"
-                ><img src="./img/logo/socails/twitter.svg" alt="Twitter logo"
-              /></a>
-              <a href="index.html"
-                ><img src="./img/logo/socails/facebook.svg" alt="Facebook logo"
-              /></a>
-              <a href="index.html"
-                ><img src="./img/logo/socails/linkedin.svg" alt="LinkedIn logo"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contact.partial.html"
+      ></section>
     </main>
-    <footer>
-      <div>
-        <div>
-          <h4>Pages</h4>
-          <ul>
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Product</a></li>
-            <li><a href="#!">Pricing</a></li>
-            <li><a href="#!">About</a></li>
-            <li><a href="#!">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Tomothy</h4>
-          <ul>
-            <li>Executor Garcia</li>
-            <li>Traci Thompson</li>
-            <li>Amanda Randall</li>
-            <li>Janna Mcintyre</li>
-            <li>Gloria Richards</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Jane Black</h4>
-          <ul>
-            <li>Philip Jones</li>
-            <li>Product</li>
-            <li>Colleen Russell</li>
-            <li>Marvin Hawkins</li>
-            <li>Bruce Simmons</li>
-          </ul>
-        </div>
-        <address>
-          <p>6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
-          <p>(843) 555-0130</p>
-          <div>
-            <a href="#!"
-              ><img src="./img/logo/socails/twitter.svg" alt="Twitter logo"
-            /></a>
-            <a href="#!"
-              ><img src="./img/logo/socails/facebook.svg" alt="Facebook logo"
-            /></a>
-            <a href="#!"
-              ><img src="./img/logo/socails/linkedin.svg" alt="LinkedIn logo"
-            /></a>
-          </div>
-        </address>
-      </div>
+    <footer class="footer">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></section>
     </footer>
   </body>
 </html>
