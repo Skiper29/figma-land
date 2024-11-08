@@ -11,6 +11,10 @@
 :root {
   scroll-behavior: smooth;
   font-family: "Rubik", sans-serif;
+  --primary-color: #2091f9;
+  --primary-color-dark: #1b7de7;
+
+  --secondary-color: #f9f9f9;
 }
 
 img {
@@ -19,7 +23,6 @@ img {
 }
 
 header {
-  background-color: #000;
   color: #fff;
 }
 
@@ -40,4 +43,19 @@ header a {
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.button {
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  padding: 15px 60px;
+}
+
+.button--primary:hover {
+  background-color: var(--primary-color-dark);
 }

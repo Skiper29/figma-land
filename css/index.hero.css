@@ -1,0 +1,33 @@
+.header__hero {
+  background-image: url("../img/index/hero/hero-bgr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: -156px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__hero-title {
+  font-size: 74px;
+  font-weight: 700;
+  width: 700px;
+
+  margin-bottom: 20px;
+}
+
+.header__hero-text {
+  font-size: 28px;
+  width: 770px;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+
+.header__hero .button--primary {
+  margin: 20px;
+}
